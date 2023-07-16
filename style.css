@@ -1,0 +1,114 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap');
+* {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* button style */
+.btn {
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.30rem;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+/* header style */
+header {
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 2% 10%;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav h3 {
+    color:#131313;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: normal;
+}
+.nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.nav a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 1.20rem;
+    font-weight: 500;
+    line-height: 26px; /* 144.444% */
+}
+.banner-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.banner-content > h1 {
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: normal;
+    padding: 30px 0;
+}
+.banner-content > p {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    padding-bottom: 30px;
+}
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+/* media query */
+
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    .nav {
+        flex-direction: column;
+    }
+    .nav > ul {
+        gap: 10px
+    }
+    .nav h3 {
+        font-size: 2.5rem;
+        padding-bottom: 10px;
+    }
+    .banner-content > h1 {
+        font-size: 3rem;
+        padding: 20px 0;
+    }
+    .banner-content {
+        padding-top: 10px;
+    }
+}
+/* medium devices */
+@media screen and (min-width: 577px) and (max-width: 960px) {
+    .nav {
+        flex-direction: column;
+    }
+    .nav > ul {
+        gap: 30px
+    }
+    .nav h3 {
+        font-size: 2.5rem;
+        padding-bottom: 10px;
+    }
+    .banner-content > h1 {
+        font-size: 3rem;
+        padding: 20px 0;
+    }
+    .banner-content {
+        padding-top: 10px;
+    }
+}
