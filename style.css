@@ -91,6 +91,56 @@ header {
 .team-div h2, p, input {
     padding-bottom: 20px;
 }
+/* feature section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 4% 10%;
+}
+.features-content {
+    /* width: 800px; */
+}
+.features-content .title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+}
+.feat-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.feat-card {
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+}
+.feature-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.feature-img img {
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+.feature-img .ten-y-badge {
+    text-align: center;
+    background-color: #FF900E;
+    border-radius: 8px;
+    color: #FFF;
+    padding: 20px;
+    width: 300px;
+    position: relative;
+    bottom: 100px;
+}
+.ten-y-badge p {
+    padding: 0;
+}
 /* facts section */
 .facts {
     margin: 4% 10%; 
@@ -99,7 +149,6 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(242px, 1fr));    
     justify-items: center;
-    /* align-items: center; */
     padding: 20px 0;
     grid-gap: 1rem;
     margin: 50px 0;
@@ -155,7 +204,7 @@ footer p {
 /* media query */
 /* mobile devices */
 @media screen and (max-width: 576px) {
-    .nav, .team {
+    .nav, .team, .features {
         flex-direction: column;
     }
     .nav > ul {
@@ -180,6 +229,15 @@ footer p {
         padding-left: 0;
         padding-top: 20px;
     }
+    .feature-img img {
+        padding: 0;
+        padding-bottom: 20px
+    }
+    .feature-img .ten-y-badge {
+        width: 250px;
+        position: static;
+        align-items: center;
+    }
     .facts-card-container {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -189,7 +247,7 @@ footer p {
 }
 /* medium devices */
 @media screen and (min-width: 577px) and (max-width: 960px) {
-    .nav, .team {
+    .nav, .team, .features {
         flex-direction: column;
     }
     .nav > ul {
