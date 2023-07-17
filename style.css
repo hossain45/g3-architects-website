@@ -140,6 +140,18 @@ header {
     grid-gap: 1rem;
     place-items: center;
 }
+/* footer style */
+footer {
+    margin: 4% 10%;
+    border-radius: 8px;
+    background: #FFF4E7;
+    text-align: center;
+    padding: 30px 0%;
+}
+footer p {
+    padding: 0%;
+    color: #131313;
+}
 /* media query */
 /* mobile devices */
 @media screen and (max-width: 576px) {
